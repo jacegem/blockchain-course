@@ -1,6 +1,3 @@
-# docker-compose
-
-
 
 ### 파일 작성
 
@@ -81,6 +78,8 @@ Attaching to docker_echo_1
 echo_1  | 2019/06/04 06:24:44 start server
 ```
 
+
+
 여러개 실행
 
 ```shell
@@ -96,3 +95,26 @@ services:
           - 9091:8000
 ```
 
+### detach mode
+
+```shell
+root@server:~/docker# docker-compose up -d
+Starting docker_echo_1  ... done
+Starting docker_echo2_1 ... done
+```
+
+
+### scale
+
+docker-compose up --scale echo=10
+
+```shell
+version: "3"
+services:
+    echo:
+        build: .
+        ports:
+          - 8000
+```
+
+앞에 `:` 콜론이 없어야 함
