@@ -2,6 +2,8 @@
 
 
 
+Widows XP : Administrator / 0ssok
+
 ## **참고자료**
 
 <http://www.pyrasis.com/docker.html>

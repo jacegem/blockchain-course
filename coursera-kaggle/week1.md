@@ -252,69 +252,121 @@ sklearn.feature_extraction.text.TfidfVectorizer
 
 ![](https://i.imgur.com/4VTbEcL.png)
 
+### N-grams
+
+![](https://i.imgur.com/Vh9BD8u.png)
+
+sklearn.feature_extraction.text.CountVectorizer:
+
+Ngram_range, analyzer
+
+### Texts preprocessing
+
+1. Lowercase
+2. Lemmatization
+3. Stemming
+4. Stopwords
+
+### Text preprocessing: lowercase
+
+![](https://i.imgur.com/1VzwzUg.png)
+
+### Texts preprocessing: lemmatization and stemming
+
+![](https://i.imgur.com/1m1KqYO.png)
+
+Stemming:
+
+- democracy, democratic, and democratization → democr
+- Saw → s
+
+Lemmatization:
+
+- democracy, democratic, democratization → democracy
+- Saw → see or saw (depending on context)
+
+### Texts preprocessing: stopwords
+
+Examples:
+
+1. Articles or prepositions
+2. Very common words
+
+NLTK, Natural Language Toolkit library for python
+
+> sklearn.feature_extraction.text.CountVectorize:
+>
+> max_df
+
+### Conclusion
+
+Pipeline of applying BOW
+
+1. Preprocessing:
+   - Lowercase, stemming, lemmatization, stopwords
+2. Ngrams can help to use local lcontext
+3. Postprocessing: TFiDF
 
 
 
+## Word2vec, CNN
+
+![](https://i.imgur.com/RkoPzHj.png)
+
+### Word2vec
+
+![](https://i.imgur.com/0rBPZsP.png)
+
+![](https://i.imgur.com/RzBe7H0.png)
+
+**Words**: Word2vec, Glove, FastText, etc
+
+**Sentences**: Doc2vec, etc
+
+There are pretrained models
+
+### BOW and w2v comparison
+
+1. Bag of words
+   - Very large vectors
+   - Meaning of each value in vector is known
+2. Word2vec
+   - Relatively small vectors
+   - Values in vector can be interpreted only in some cases
+   - The words with similar meaning often have similar embeddings
 
 
 
+### Finetuning example
+
+![](https://i.imgur.com/H2QB2h8.png)
 
 
 
+### Augmentation
+
+![](https://i.imgur.com/EDivF3t.png)
 
 
 
+### Feature extraction from text and images
 
+1. Texts
+   - Preprocessing
+     - Lowercase, stemming, lemmarization, stopwords
+   - Bag of words
+     - Huge vectors
+     - Ngrams can help to use local context
+     - TFiDF can be of use as postprocessing
+   - Word2vec
+     - Relatively small vectors
+     - Pretrained models
+2. Images
+   - Feature can be extracted from different layers
+   - Careful choosing of pretrained network can help
+   - Finetuning allows to refine pretrained models
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Final project overview
 
 
 
