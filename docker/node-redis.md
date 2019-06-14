@@ -164,11 +164,11 @@ $ sudo docker-compose up --build
 
 ## 파일
 
-- [package.json]
-- [app.js]
-- [Dockerfile]
-- [docker-compose.yml]
-- [.dockerignore]
+- [package.json](<https://github.com/jacegem/blockchain-course/blob/master/docker/node-redis/package.json>)
+- [app.js](<https://github.com/jacegem/blockchain-course/blob/master/docker/node-redis/app.js>)
+- [Dockerfile](<https://github.com/jacegem/blockchain-course/blob/master/docker/node-redis/Dockerfile>)
+- [docker-compose.yml](<https://github.com/jacegem/blockchain-course/blob/master/docker/node-redis/docker-compose.yml>)
+- [.dockerignore](<https://github.com/jacegem/blockchain-course/blob/master/docker/node-redis/.dockerignore>)
 
 
 
@@ -176,6 +176,31 @@ $ sudo docker-compose up --build
 
 ---
 
+
+
+다음 시스템을 구성하고 관련 파일을 제출하시오
+
+```
+// redis-one 컨테이너
+// redis-two 컨테이너
+// redis-three 컨테이너
+// node-server 컨테이너
+- localhost:8080/one <--redis-one server의
+- localhost:8080/two <--redis-two server의
+- localhost:8080/three <--redis-two server의
+
+// apache 컨테이너
+- index.html <= 본인 이름 출력
+- localhost:80/
+```
+
+
+
+
+
+
+
+---
 
 
 
