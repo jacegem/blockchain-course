@@ -1,0 +1,10 @@
+version: "2"
+services:
+  redis-one:
+    image: "redis"
+  redis-two:
+    image: "redis"
+  node-app:
+    build: .
+    ports:
+      - "8081:8081"
