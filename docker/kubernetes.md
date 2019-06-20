@@ -131,7 +131,8 @@ hello-world:2 도 올려줍니다.!
 ## Reference
 
 - [서비큐라님 블로그](https://subicura.com/2017/01/19/docker-guide-for-beginners-1.html)
-도커 튜토리얼 : 깐 김에 배포까지
+- [도커 튜토리얼 : 깐 김에 배포까지](https://blog.nacyot.com/articles/2014-01-27-easy-deploy-with-docker/)
+
 Docker에서 apt-get update가 실패할 때
 Docker 컨테이너 이미지 생성
 Image doe not contain ‘sudo’
